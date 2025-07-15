@@ -27,8 +27,8 @@ function actualizarDatos(datos) {
     document.getElementById('comprador').textContent = datos.comprador || 'No especificado';
     document.getElementById('vendedor').textContent = datos.vendedor || 'No especificado';
     document.getElementById('perfume').textContent = datos.perfume || 'No especificado';
-    document.getElementById('mililitros').textContent = datos.mililitros ? `${datos.mililitros}ml` : 'No especificado';
-    document.getElementById('precio').textContent = datos.precio ? `$${datos.precio}` : 'No especificado';
+    document.getElementById('mililitros').textContent = datos.mililitros ? `${datos.mililitros} ml` : 'No especificado';
+    document.getElementById('precio').textContent = datos.precio ? `$${datos.precio} MXN` : 'No especificado';
     document.getElementById('fecha').textContent = datos.fecha || 'No especificada';
     document.getElementById('cupon_descuento').textContent = datos.cupon_descuento || '5%';
 }
