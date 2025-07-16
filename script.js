@@ -38,14 +38,14 @@ function cargarDatosPorDefecto() {
         comprador: 'Cliente General',
         vendedor: 'Vendedor General',
         perfume: 'Perfume de Muestra',
-        mililitros: '100',
+        mililitros: '0',
         precio: '0',
         fecha: new Date().toLocaleDateString('es-ES', { 
             year: 'numeric', 
             month: 'long', 
             day: 'numeric' 
         }),
-        cupon_descuento: '5%'
+        cupon_descuento: '0%'
     };
     actualizarDatos(datosDefecto);
 }
