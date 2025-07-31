@@ -30,7 +30,7 @@ function actualizarDatos(datos) {
     document.getElementById('mililitros').textContent = datos.mililitros ? `${datos.mililitros} ml` : 'No especificado';
     document.getElementById('precio').textContent = datos.precio ? `$${datos.precio} MXN` : 'No especificado';
     document.getElementById('fecha').textContent = datos.fecha || 'No especificada';
-    document.getElementById('cupon_descuento').textContent = datos.cupon_descuento || '5%';
+    document.getElementById('cupon_descuento').textContent = datos.cupon_descuento || '5% en tu proxima compra';
 }
 
 function cargarDatosPorDefecto() {
@@ -38,14 +38,14 @@ function cargarDatosPorDefecto() {
         comprador: 'Cliente General',
         vendedor: 'Vendedor General',
         perfume: 'Perfume de Muestra',
-        mililitros: '100',
+        mililitros: '0',
         precio: '0',
         fecha: new Date().toLocaleDateString('es-ES', { 
             year: 'numeric', 
             month: 'long', 
             day: 'numeric' 
         }),
-        cupon_descuento: '5%'
+        cupon_descuento: '0%'
     };
     actualizarDatos(datosDefecto);
 }
