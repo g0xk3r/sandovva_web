@@ -12,7 +12,7 @@ def obtener_parametros():
     cupon_descuento = "5%"
     return comprador, vendedor, perfume, mililitros, precio, fecha, cupon_descuento
 
-base_url = "https://g0xk3r.github.io/sandovva_web"
+base_url = "https://sandovva.up.railway.app"
 
 comprador, vendedor, perfume, mililitros, precio, fecha, cupon_descuento = obtener_parametros()
 
